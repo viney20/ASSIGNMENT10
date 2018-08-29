@@ -1,4 +1,4 @@
-"""
+
 #Q.1- Write a Python program to read n lines of a file
 f=open('test.txt','r')
 lines=f.readlines()
@@ -18,7 +18,7 @@ file2.write(data)
 file2.close()
 
 #Q.4- Write a Python program to combine each line from first file with the corresponding line in second file.
-"""
+
 f=open('test9.txt')
 g=open('test10.txt')
 data=f.read()
@@ -29,7 +29,7 @@ for i in range(len(a)):
     print(a[i]+" "+b[i])
 g.close()
 f.close()
-"""  
+
 #Q.5- Write a Python program to write 10 random numbers into a file. Read the file and then sort the numbers and then store it to another file.
 import random
 file=open('test1.txt','w')
@@ -52,4 +52,3 @@ for i in line:
     file.write(i)
     file.write(" ")
 file.close()
-"""
