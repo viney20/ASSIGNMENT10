@@ -22,14 +22,17 @@ file2.close()
 
 f=open('test9.txt')
 g=open('test10.txt')
+m=open('text11.txt','w')
 data=f.read()
 ty=g.read()
 a=data.split()
 b=ty.split()
 for i in range(len(a)):
-    print(a[i]+" "+b[i])
+    x=a[i]+" "+b[i]
+    m.write(x+"\n")
 g.close()
 f.close()
+m.close()
 
 #Q.5- Write a Python program to write 10 random numbers into a file. Read the file and then sort the numbers and then store it to another file.
 import random
