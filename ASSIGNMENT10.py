@@ -2,13 +2,14 @@
 #Q.1- Write a Python program to read n lines of a file
 f=open('test.txt','r')
 lines=f.readlines()
-print(lines)
+#print(lines)
+for i in range(0,len(lines)):
+    print("line",i,":",lines[i])
 #Q.2- Write a Python program to count the frequency of words in a file.
-file1=open('test6.txt','r')
-data=file1.read()
-y=input("enter string")
-x=data.count(y)
-print(x)
+from collections import Counter
+file1=open('Q2.txt','r')
+count = Counter(file1.read().split())
+print(count)
 #Q.3- Write a Python program to copy the contents of a file to another file
 file1=open('test4.txt','r')
 data=file1.read()
